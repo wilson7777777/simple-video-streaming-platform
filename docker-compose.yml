@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/videos:/usr/share/nginx/html/videos # Optional: Mount videos for live updates
